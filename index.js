@@ -9,7 +9,9 @@ const serviceAccount = require('C:\\Users\\HP\\AfcfServer\\afcfminna-firebase-ad
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
-
+app.get('/', (req,res) => {
+  res.send('hello its working')
+})
 app.use(bodyParser.json());
 process.env.GOOGLE_APPLICATION_CREDENTIALS
 const schedulePushNotification = (token, notificationTime) => {
