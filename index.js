@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
 
-const serviceAccount = require('C:\\Users\\HP\\AfcfServer\\afcfminna-firebase-adminsdk-ovt50-c8c643f9e3.json');
+const serviceAccount = require('./afcfminna-firebase-adminsdk-ovt50-c8c643f9e3.json');
 
 
 admin.initializeApp({
